@@ -5,6 +5,41 @@
     margin: 4px 5% 8px 5%;
     padding: 12px 8px;
 }  
+/* Allies Timeline */
+.allies-slider{
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.allies-slider .allies-slider-track{
+    display: flex;
+    align-items: center;
+    animation: timeMove 40s linear infinite;
+    -webkit-animation: timeMove 40s linear infinite;
+    width: calc(200px * 34); 
+}
+
+.allies-slider .allies-slide{
+    width: 200px;
+    margin: 15px;
+}
+
+.allies-slider .allies-slide img{
+    width: 100%;
+}
+
+@keyframes timeMove {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 17));
+        transform: translateX(calc(-200px * 17));
+    }
+}
 
 /* Be part of us container */
 /* Background on press */

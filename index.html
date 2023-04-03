@@ -29,6 +29,23 @@
         ::-webkit-scrollbar-thumb:hover {
             background-color: #a8bbbf;
         }
+
+        .timeLineSlides {display: none;}
+
+        .activeTime {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade-time {
+            animation-name: faded;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes faded {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
     </style>
 
     <!-- Basic Page Needs -->
@@ -483,43 +500,253 @@
                                             <h2 style="color: black; padding-bottom: 80px;">ALIADOS ESTRATÉGICOS</h2>
                                         </div>
                                         <!-- Timeline -->
-                                        <section class="cd-h-timeline js-cd-h-timeline margin-bottom-md">
+                                        <div class="allies-slider">
+                                            <div class="allies-slider-track">
+                                                <div class="allies-slide">
+                                                    <div class="image_frame no_link scale-with-grid no_border">
+                                                        <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/Afirme_logo-1.png"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="allies-slide">
+                                                    <div class="image_frame no_link scale-with-grid no_border">
+                                                        <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/Logo_de_Konfío-1.png" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="allies-slide">
+                                                    <div class="image_frame no_link scale-with-grid no_border">
+                                                        <div class="image_wrapper" style="display: flex; justify-content: center;"><img class="scale-with-grid" src="content/clinic/images/logos/logo_plai-1.png" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="allies-slide">
+                                                    <div class="image_frame no_link scale-with-grid no_border">
+                                                        <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/fpm-1.png" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="allies-slide">
+                                                    <div class="image_frame no_link scale-with-grid no_border">
+                                                        <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/icono_heroikka.png" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="allies-slide">
+                                                    <div class="image_frame no_link scale-with-grid no_border">
+                                                        <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/Logo_PRODECON-1.png"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="allies-slide">
+                                                    <div class="image_frame no_link scale-with-grid no_border">
+                                                        <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/Logo_IPN-1.png" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="allies-slide">
+                                                    <div class="image_frame no_link scale-with-grid no_border">
+                                                        <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/lmt-1.png" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="allies-slide">
+                                                    <div class="image_frame no_link scale-with-grid no_border">
+                                                        <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/asom-1.png" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="allies-slide">
+                                                    <div class="image_frame no_link scale-with-grid no_border">
+                                                        <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/tecnologico-de-monterrey-1.png" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="allies-slide">
+                                                    <div class="image_frame no_link scale-with-grid no_border">
+                                                        <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/Logo_Universidad_Anáhuac-1.png" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="allies-slide">
+                                                    <div class="image_frame no_link scale-with-grid no_border">
+                                                        <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/LogosDalia-1.png" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="allies-slide">
+                                                    <div class="image_frame no_link scale-with-grid no_border">
+                                                        <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/LogoFumecCompleto.png" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="allies-slide">
+                                                    <div class="image_frame no_link scale-with-grid no_border">
+                                                        <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/ccc-1.png" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="allies-slide">
+                                                    <div class="image_frame no_link scale-with-grid no_border">
+                                                        <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/escuela-bolsa-mexicana-1.png" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="allies-slide">
+                                                    <div class="image_frame no_link scale-with-grid no_border">
+                                                        <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/logo_mercadolibre-1.png" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="allies-slide">
+                                                    <div class="image_frame no_link scale-with-grid no_border">
+                                                        <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/LOGO-FCARM-1.png" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Repeat -->
+                                                <div class="allies-slide">
+                                                    <div class="image_frame no_link scale-with-grid no_border">
+                                                        <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/Afirme_logo-1.png"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="allies-slide">
+                                                    <div class="image_frame no_link scale-with-grid no_border">
+                                                        <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/Logo_de_Konfío-1.png" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="allies-slide">
+                                                    <div class="image_frame no_link scale-with-grid no_border">
+                                                        <div class="image_wrapper" style="display: flex; justify-content: center;"><img class="scale-with-grid" src="content/clinic/images/logos/logo_plai-1.png" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="allies-slide">
+                                                    <div class="image_frame no_link scale-with-grid no_border">
+                                                        <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/fpm-1.png" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="allies-slide">
+                                                    <div class="image_frame no_link scale-with-grid no_border">
+                                                        <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/icono_heroikka.png" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="allies-slide">
+                                                    <div class="image_frame no_link scale-with-grid no_border">
+                                                        <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/Logo_PRODECON-1.png"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="allies-slide">
+                                                    <div class="image_frame no_link scale-with-grid no_border">
+                                                        <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/Logo_IPN-1.png" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="allies-slide">
+                                                    <div class="image_frame no_link scale-with-grid no_border">
+                                                        <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/lmt-1.png" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="allies-slide">
+                                                    <div class="image_frame no_link scale-with-grid no_border">
+                                                        <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/asom-1.png" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="allies-slide">
+                                                    <div class="image_frame no_link scale-with-grid no_border">
+                                                        <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/tecnologico-de-monterrey-1.png" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="allies-slide">
+                                                    <div class="image_frame no_link scale-with-grid no_border">
+                                                        <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/Logo_Universidad_Anáhuac-1.png" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="allies-slide">
+                                                    <div class="image_frame no_link scale-with-grid no_border">
+                                                        <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/LogosDalia-1.png" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="allies-slide">
+                                                    <div class="image_frame no_link scale-with-grid no_border">
+                                                        <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/LogoFumecCompleto.png" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="allies-slide">
+                                                    <div class="image_frame no_link scale-with-grid no_border">
+                                                        <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/ccc-1.png" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="allies-slide">
+                                                    <div class="image_frame no_link scale-with-grid no_border">
+                                                        <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/escuela-bolsa-mexicana-1.png" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="allies-slide">
+                                                    <div class="image_frame no_link scale-with-grid no_border">
+                                                        <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/logo_mercadolibre-1.png" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="allies-slide">
+                                                    <div class="image_frame no_link scale-with-grid no_border">
+                                                        <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/LOGO-FCARM-1.png" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <section class="cd-h-timeline js-cd-h-timeline margin-bottom-md">
                                             <div class="cd-h-timeline__container container">
                                                 <div class="cd-h-timeline__dates">
                                                     <div class="cd-h-timeline__line">
-                                                    <ol>
-                                                        <li style="font-size: 28px;"><a href="#0" data-date="01/01/2014" class="cd-h-timeline__date cd-h-timeline__date--selected">AFIRME</a></li>
-                                                        <li style="font-size: 28px;"><a href="#0" data-date="15/01/2014" class="cd-h-timeline__date">KONFIO</a></li>
-                                                        <li style="font-size: 28px;"><a href="#0" data-date="30/01/2014" class="cd-h-timeline__date">PAI</a></li>
-                                                        <li style="font-size: 28px;"><a href="#0" data-date="15/02/2014" class="cd-h-timeline__date">POR MÉXICO</a></li>
-                                                        <li style="font-size: 28px;"><a href="#0" data-date="28/02/2014" class="cd-h-timeline__date">HEROIKKA</a></li>
-                                                        <li style="font-size: 28px;"><a href="#0" data-date="15/03/2014" class="cd-h-timeline__date">PRODECON</a></li>
-                                                        <li style="font-size: 28px;"><a href="#0" data-date="30/03/2014" class="cd-h-timeline__date">IPN</a></li>
-                                                        <li style="font-size: 28px;"><a href="#0" data-date="15/04/2014" class="cd-h-timeline__date">LADY MULTIMASK</a></li>
-                                                        <li style="font-size: 28px;"><a href="#0" data-date="30/04/2014" class="cd-h-timeline__date">ASOM</a></li>
-                                                        <li style="font-size: 28px;"><a href="#0" data-date="15/05/2014" class="cd-h-timeline__date">TM</a></li>
-                                                        <li style="font-size: 28px;"><a href="#0" data-date="05/06/2014" class="cd-h-timeline__date">UA</a></li>
-                                                        <li style="font-size: 28px;"><a href="#0" data-date="15/06/2014" class="cd-h-timeline__date">DALIA EMPOWER</a></li>
-                                                        <li style="font-size: 28px;"><a href="#0" data-date="30/06/2014" class="cd-h-timeline__date">FUMEC</a></li>
-                                                        <li style="font-size: 28px;"><a href="#0" data-date="15/07/2014" class="cd-h-timeline__date">MCC</a></li>
-                                                        <li style="font-size: 28px;"><a href="#0" data-date="30/07/2014" class="cd-h-timeline__date">EBM</a></li>
-                                                        <li style="font-size: 28px;"><a href="#0" data-date="15/08/2014" class="cd-h-timeline__date">MC</a></li>
-                                                        <li style="font-size: 28px;"><a href="#0" data-date="30/08/2014" class="cd-h-timeline__date">FCARM</a></li>
-                                                    </ol>
-                                                    <span class="cd-h-timeline__filling-line" aria-hidden="true"></span>
-                                                </div> <!-- .cd-h-timeline__line -->
-                                            </div> <!-- .cd-h-timeline__dates --> 
-                                            <ul>
-                                                <li><a href="#0" class="text-replace cd-h-timeline__navigation cd-h-timeline__navigation--prev cd-h-timeline__navigation--inactive">Prev</a></li>
-                                                <li><a href="#0" class="text-replace cd-h-timeline__navigation cd-h-timeline__navigation--next">Next</a></li>
-                                            </ul>
-                                            </div> <!-- .cd-h-timeline__container -->
+                                                        <ol class="">
+                                                            <li class="dotTime" style="font-size: 28px;"><a href="#0" data-date="01/01/2014" class="cd-h-timeline__date cd-h-timeline__date--selected">AFIRME</a></li>
+                                                            <li class="dotTime" style="font-size: 28px;"><a href="#0" data-date="15/01/2014" class="cd-h-timeline__date">KONFIO</a></li>
+                                                            <li class="dotTime" style="font-size: 28px;"><a href="#0" data-date="30/01/2014" class="cd-h-timeline__date">PAI</a></li>
+                                                            <li class="dotTime" style="font-size: 28px;"><a href="#0" data-date="15/02/2014" class="cd-h-timeline__date">POR MÉXICO</a></li>
+                                                            <li style="font-size: 28px;"><a href="#0" data-date="28/02/2014" class="cd-h-timeline__date">HEROIKKA</a></li>
+                                                            <li style="font-size: 28px;"><a href="#0" data-date="15/03/2014" class="cd-h-timeline__date">PRODECON</a></li>
+                                                            <li style="font-size: 28px;"><a href="#0" data-date="30/03/2014" class="cd-h-timeline__date">IPN</a></li>
+                                                            <li style="font-size: 28px;"><a href="#0" data-date="15/04/2014" class="cd-h-timeline__date">LADY MULTIMASK</a></li>
+                                                            <li style="font-size: 28px;"><a href="#0" data-date="30/04/2014" class="cd-h-timeline__date">ASOM</a></li>
+                                                            <li style="font-size: 28px;"><a href="#0" data-date="15/05/2014" class="cd-h-timeline__date">TM</a></li>
+                                                            <li style="font-size: 28px;"><a href="#0" data-date="05/06/2014" class="cd-h-timeline__date">UA</a></li>
+                                                            <li style="font-size: 28px;"><a href="#0" data-date="15/06/2014" class="cd-h-timeline__date">DALIA EMPOWER</a></li>
+                                                            <li style="font-size: 28px;"><a href="#0" data-date="30/06/2014" class="cd-h-timeline__date">FUMEC</a></li>
+                                                            <li style="font-size: 28px;"><a href="#0" data-date="15/07/2014" class="cd-h-timeline__date">MCC</a></li>
+                                                            <li style="font-size: 28px;"><a href="#0" data-date="30/07/2014" class="cd-h-timeline__date">EBM</a></li>
+                                                            <li style="font-size: 28px;"><a href="#0" data-date="15/08/2014" class="cd-h-timeline__date">MC</a></li>
+                                                            <li style="font-size: 28px;"><a href="#0" data-date="30/08/2014" class="cd-h-timeline__date">FCARM</a></li>
+                                                        </ol>
+                                                        <span class="cd-h-timeline__filling-line" aria-hidden="true"></span>
+                                                    </div>
+                                                </div>
+                                                <ul>
+                                                    <li><a href="#0" class="text-replace cd-h-timeline__navigation cd-h-timeline__navigation--prev cd-h-timeline__navigation--inactive">Prev</a></li>
+                                                    <li><a href="#0" class="text-replace cd-h-timeline__navigation cd-h-timeline__navigation--next">Next</a></li>
+                                                </ul>
+                                            </div>
                                             <div class="cd-h-timeline__events" style="width: 90%;">
                                                 <ol>
                                                     <li class="cd-h-timeline__event cd-h-timeline__event--selected" style="display: flex; justify-content: center;">
                                                         <div class="cd-h-timeline__event-content">
                                                             <div class="image_frame no_link scale-with-grid no_border">
-                                                                <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/Afirme_logo-1.png" />
+                                                                <div class="image_wrapper"><img class="scale-with-grid timeLineSlides fade-time" src="content/clinic/images/logos/Afirme_logo-1.png"/>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -527,15 +754,7 @@
                                                     <li class="cd-h-timeline__event" style="display: flex; justify-content: center;">
                                                         <div class="cd-h-timeline__event-content">
                                                             <div class="image_frame no_link scale-with-grid no_border">
-                                                                <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/Logo_de_Konfío-1.png" />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="cd-h-timeline__event" style="display: flex; justify-content: center;">
-                                                        <div class="cd-h-timeline__event-content ">
-                                                            <div class="image_frame no_link scale-with-grid no_border">
-                                                                <div class="image_wrapper" style="display: flex; justify-content: center;"><img class="scale-with-grid" src="content/clinic/images/logos/logo_plai-1.png" />
+                                                                <div class="image_wrapper"><img class="scale-with-grid timeLineSlides fade-time" src="content/clinic/images/logos/Logo_de_Konfío-1.png" />
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -543,7 +762,15 @@
                                                     <li class="cd-h-timeline__event" style="display: flex; justify-content: center;">
                                                         <div class="cd-h-timeline__event-content">
                                                             <div class="image_frame no_link scale-with-grid no_border">
-                                                                <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/fpm-1.png" />
+                                                                <div class="image_wrapper" style="display: flex; justify-content: center;"><img class="scale-with-grid timeLineSlides fade-time" src="content/clinic/images/logos/logo_plai-1.png" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="cd-h-timeline__event" style="display: flex; justify-content: center;">
+                                                        <div class="cd-h-timeline__event-content">
+                                                            <div class="image_frame no_link scale-with-grid no_border">
+                                                                <div class="image_wrapper"><img class="scale-with-grid timeLineSlides fade-time" src="content/clinic/images/logos/fpm-1.png" />
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -653,8 +880,8 @@
                                                         </div>
                                                     </li>
                                                 </ol>
-                                            </div> <!-- .cd-h-timeline__events -->
-                                        </section>
+                                            </div>
+                                        </section> -->
                                     </div>
                                 </div>
                             </div>
@@ -772,8 +999,6 @@
                         <div class="copyright">
                             &copy; 2023 AMMJE. Asociación Mexicana de Mujeres Jefas de Empresas A.C.
                         </div>
-                        <!--Social info area-->
-                        
                     </div>
                 </div>
             </div>
@@ -794,6 +1019,8 @@
     <script src="js/swipe-content.js"></script>
     <script src="js/main.js"></script>
 
+    <script src="js/bepart.js"></script>
+
     <script>
         jQuery(window).on('load', function () {
             var retina = window.devicePixelRatio> 1 ? true : false;
@@ -806,103 +1033,27 @@
         });
     </script>
 
-    <!-- Be part modal functions -->
     <script>
-        $(function() {
-            // all needed variables
-            var $overlaybepart = $('.overlay-be-part');
-            var $mainPopUp = $('.main-popup-be-part')
-            var $signIn = $('#sign-in');
-            var $register = $('#register');
-            var $formSignIn = $('form.sign-in');
-            var $formRegister = $('form.register');
+        let slideIndexTime = 0;
+        showTime();
 
-            var $firstChild = $('nav ul li:first-child');
-            var $secondChild = $('nav ul li:nth-child(2)');
-            var $thirdChild = $('nav ul li:nth-child(3)');
-
-            //defining function to create underline initial state on document load
-            function initialState() {
-                $('.underline').css({
-                    "width": $firstChild.width(),
-                    "left": $firstChild.position().left,
-                    "top": $firstChild.position().top + $firstChild.outerHeight(true) + 'px'
-                });
+        function showTime() {
+            let timeLoop;
+            let slidesTime = document.getElementsByClassName("timeLineSlides");
+            /* let dots = document.getElementsByClassName("dotTime"); */
+            for (timeLoop = 0; timeLoop < slidesTime.length; timeLoop++) {
+                slidesTime[timeLoop].style.display = "none";  
             }
-          initialState(); //() used after calling function to call function immediately on doc load
-
-          //defining function to change underline depending on which li is active
-            function changeUnderline(el) {
-                $('.underline').css({
-                    "width": el.width(),
-                    "left": el.position().left,
-                    "top": el.position().top + el.outerHeight(true) + 'px'
-                });
-            } //note: have not called the function...don't want it called immediately
-
-            $firstChild.on('click', function(){
-                var el = $firstChild;
-                changeUnderline(el); //call the changeUnderline function with el as the perameter within the called function
-                $secondChild.removeClass('active');
-                $thirdChild.removeClass('active');
-                $(this).addClass('active');
-            });
-
-            $secondChild.on('click', function(){
-                var el = $secondChild;
-                changeUnderline(el); //call the changeUnderline function with el as the perameter within the called function
-                $firstChild.removeClass('active');
-                $thirdChild.removeClass('active');
-                $(this).addClass('active');
-            });
-
-            $thirdChild.on('click', function(){
-                var el = $thirdChild;
-                changeUnderline(el); //call the changeUnderline function with el as the perameter within the called function
-                $firstChild.removeClass('active');
-                $secondChild.removeClass('active');
-                $(this).addClass('active');
-            });
-
-
-            $('button').on('click', function(){
-                $overlaybepart.addClass('visible');
-                $mainPopUp.addClass('visible');
-                $signIn.addClass('active');
-                $register.removeClass('active');
-                $formRegister.removeClass('move-left');
-                $formSignIn.removeClass('move-left');
-            });
-            $overlaybepart.on('click', function(){
-                $(this).removeClass('visible');
-                $mainPopUp.removeClass('visible');
-            });
-            $('#popup-close-button a').on('click', function(e){
-                e.preventDefault();
-                $overlaybepart.removeClass('visible');
-                $mainPopUp.removeClass('visible');
-            });
-
-            $signIn.on('click', function(){
-                $signIn.addClass('active');
-                $register.removeClass('active');
-                $formSignIn.removeClass('move-left');
-                $formRegister.removeClass('move-left');
-            });
-
-            $register.on('click', function(){
-                $signIn.removeClass('active');
-                $register.addClass('active');
-                $formSignIn.addClass('move-left');
-                $formRegister.addClass('move-left');
-            });
-
-            $('input').on('submit', function(e){
-              e.preventDefault(); //used to prevent submission of form...remove for real use
-            });
-        });
+            slideIndexTime++;
+            if (slideIndexTime > slidesTime.length) {slideIndexTime = 1}    
+            /* for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" activeTime", "");
+            } */
+            slidesTime[slideIndexTime-1].style.display = "inline";  
+            /* dots[slideIndexTime-1].className += " activeTime"; */
+            setTimeout(showTime, 2000); // Change image every 2 seconds
+        }
     </script>
-
 </body>
 
 </html>
