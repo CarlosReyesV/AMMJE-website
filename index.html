@@ -8,9 +8,8 @@
 <!--<![endif]-->
 
 <head>
-
+    <!-- Scroll on Be-part Form-->
     <style>
-        /* Scroll */
         ::-webkit-scrollbar {
             width: 20px;
         }
@@ -886,6 +885,95 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Test Allies -->
+                        <div class="section dark" style="padding-top: 128px; padding-bottom: 48px; background-color: #263a78; background-image:url(content/clinic/images/home_clinic_staff_bg.jpg); background-repeat:no-repeat; background-position:center; background-attachment:fixed; background-size:cover; -webkit-background-size:cover; height: 550px;">
+                            <div class="section_wrapper clearfix">
+                                <div class="items_group clearfix">
+                                    <!-- One full width row-->
+                                    <div class="column one column_column">
+                                        <div class="column_attr align_center">
+                                            <h2 style="color: black; padding-bottom: 80px;">ALIADOS ESTRATÉGICOS</h2>
+                                        </div>
+                                        <!-- Timeline -->
+                                        <div style='text-align: center;'>
+                                            <span class="dotAllied" onclick='currentSlide(1)'></span>
+                                            <span class="dotAllied" onclick='currentSlide(2)'></span>
+                                            <span class="dotAllied" onclick='currentSlide(3)'></span>
+                                            <span class="dotAllied" onclick='currentSlide(4)'></span>
+                                            <span class="dotAllied" onclick='currentSlide(5)'></span>
+                                            <span class="dotAllied" onclick='currentSlide(6)'></span>
+                                            <span class="dotAllied" onclick='currentSlide(7)'></span>
+                                            <span class="dotAllied" onclick='currentSlide(8)'></span>
+                                            <span class="dotAllied" onclick='currentSlide(9)'></span>
+                                            <span class="dotAllied" onclick='currentSlide(10)'></span>
+                                            <span class="dotAllied" onclick='currentSlide(11)'></span>
+                                            <span class="dotAllied" onclick='currentSlide(12)'></span>
+                                            <span class="dotAllied" onclick='currentSlide(13)'></span>
+                                            <span class="dotAllied" onclick='currentSlide(14)'></span>
+                                            <span class="dotAllied" onclick='currentSlide(15)'></span>
+                                            <span class="dotAllied" onclick='currentSlide(16)'></span>
+                                            <span class="dotAllied" onclick='currentSlide(17)'></span>
+                                        </div>
+                                        <br/>
+                                        <div class="slideshow-container">
+                                            <div class="slideshow-inner">
+                                                <div class="image_wrapper allied-Slide allied-fade">
+                                                    <img src='content/clinic/images/logos/Afirme_logo-1.png'/>
+                                                </div>
+                                                <div class="image_wrapper allied-Slide allied-fade">
+                                                    <img src='content/clinic/images/logos/Logo_de_Konfío-1.png'/>
+                                                </div>
+                                                <div class="image_wrapper allied-Slide allied-fade">
+                                                    <img src='content/clinic/images/logos/logo_plai-1.png'/>
+                                                </div>
+                                                <div class="image_wrapper allied-Slide allied-fade">
+                                                    <img src='content/clinic/images/logos/fpm-1.png'/>
+                                                </div>
+                                                <div class="image_wrapper allied-Slide allied-fade">
+                                                    <img src='content/clinic/images/logos/icono_heroikka.png'/>
+                                                </div>
+                                                <div class="image_wrapper allied-Slide allied-fade">
+                                                    <img src='content/clinic/images/logos/Logo_PRODECON-1.png'/>
+                                                </div>
+                                                <div class="image_wrapper allied-Slide allied-fade">
+                                                    <img src='content/clinic/images/logos/Logo_IPN-1.png'/>
+                                                </div>
+                                                <div class="image_wrapper allied-Slide allied-fade">
+                                                    <img src='content/clinic/images/logos/lmt-1.png'/>
+                                                </div>
+                                                <div class="image_wrapper allied-Slide allied-fade">
+                                                    <img src='content/clinic/images/logos/asom-1.png'/>
+                                                </div>
+                                                <div class="image_wrapper allied-Slide allied-fade">
+                                                    <img src='content/clinic/images/logos/tecnologico-de-monterrey-1.png'/>
+                                                </div>
+                                                <div class="image_wrapper allied-Slide allied-fade">
+                                                    <img src='content/clinic/images/logos/Logo_Universidad_Anáhuac-1.png'/>
+                                                </div>
+                                                <div class="image_wrapper allied-Slide allied-fade">
+                                                    <img src='content/clinic/images/logos/LogosDalia-1.png'/>
+                                                </div>
+                                                <div class="image_wrapper allied-Slide allied-fade">
+                                                    <img src='content/clinic/images/logos/LogoFumecCompleto.png'/>
+                                                </div>
+                                                <div class="image_wrapper allied-Slide allied-fade">
+                                                    <img src='content/clinic/images/logos/ccc-1.png'/>
+                                                </div>
+                                                <div class="image_wrapper allied-Slide allied-fade">
+                                                    <img src='content/clinic/images/logos/escuela-bolsa-mexicana-1.png'/>
+                                                </div>
+                                                <div class="image_wrapper allied-Slide allied-fade">
+                                                    <img src='content/clinic/images/logos/logo_mercadolibre-1.png'/>
+                                                </div>
+                                                <div class="image_wrapper allied-Slide allied-fade">
+                                                    <img src='content/clinic/images/logos/LOGO-FCARM-1.png'/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <!-- Contact -->
                         <div class="section" style="padding-top: 120px; padding-bottom: 4px; background-color:#fff">
                             <div class="section_wrapper clearfix">
@@ -1021,6 +1109,7 @@
 
     <script src="js/bepart.js"></script>
 
+    <!-- Top navbar scroll -->
     <script>
         jQuery(window).on('load', function () {
             var retina = window.devicePixelRatio> 1 ? true : false;
@@ -1033,25 +1122,74 @@
         });
     </script>
 
+    <!-- Allies -->
     <script>
-        let slideIndexTime = 0;
-        showTime();
+        var slideIndex = 1;
+        var myTimer;
+        var slideshowContainer;
 
-        function showTime() {
-            let timeLoop;
-            let slidesTime = document.getElementsByClassName("timeLineSlides");
-            /* let dots = document.getElementsByClassName("dotTime"); */
-            for (timeLoop = 0; timeLoop < slidesTime.length; timeLoop++) {
-                slidesTime[timeLoop].style.display = "none";  
+        window.addEventListener("load",function() {
+            showSlides(slideIndex);
+            myTimer = setInterval(function(){plusSlides(1)}, 1000);
+        
+            //COMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+            slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
+        
+            //UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+            // slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
+        
+            slideshowContainer.addEventListener('mouseenter', pause)
+            slideshowContainer.addEventListener('mouseleave', resume)
+        })
+
+        // NEXT AND PREVIOUS CONTROL
+        function plusSlides(n){
+            clearInterval(myTimer);
+            if (n < 0){
+                showSlides(slideIndex -= 1);
+            } else {
+                showSlides(slideIndex += 1); 
             }
-            slideIndexTime++;
-            if (slideIndexTime > slidesTime.length) {slideIndexTime = 1}    
-            /* for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" activeTime", "");
-            } */
-            slidesTime[slideIndexTime-1].style.display = "inline";  
-            /* dots[slideIndexTime-1].className += " activeTime"; */
-            setTimeout(showTime, 2000); // Change image every 2 seconds
+
+          //COMMENT OUT THE LINES BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+
+            if (n === -1){
+                myTimer = setInterval(function(){plusSlides(n + 2)}, 4000);
+            } else {
+                myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+            }
+        }
+
+        //Controls the current slide and resets interval if needed
+        function currentSlide(n){
+            clearInterval(myTimer);
+            myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n){
+            var i;
+            var slides = document.getElementsByClassName("allied-Slide");
+            var dots = document.getElementsByClassName("dotAllied");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "flex";
+            dots[slideIndex-1].className += " active";
+        }
+
+        pause = () => {
+            clearInterval(myTimer);
+        }
+
+        resume = () =>{
+            clearInterval(myTimer);
+            myTimer = setInterval(function(){plusSlides(slideIndex)}, 1000);
         }
     </script>
 </body>
