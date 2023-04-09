@@ -1,7 +1,6 @@
 /* Board */
 
-
-/* Allies */
+/* Second Allies Timeline*/
 var slideIndex = 1;
 var myTimer;
 var slideshowContainer;
@@ -49,10 +48,10 @@ function showSlides(n){
         slides[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+        dots[i].className = dots[i].className.replace(" activeT2", "");
     }
     slides[slideIndex-1].style.display = "flex";
-    dots[slideIndex-1].className += " active";
+    dots[slideIndex-1].className += " activeT2";
 }
 pause = () => {
     clearInterval(myTimer);
@@ -61,3 +60,42 @@ resume = () =>{
     clearInterval(myTimer);
     myTimer = setInterval(function(){plusSlides(slideIndex)}, 1000);
 }
+
+/* Third Allies Timeline */
+$(document).ready(function () {
+    var mySwiper = new Swiper(".swiper", {
+        autoHeight: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false
+            },
+        speed: 500,
+        direction: "horizontal",
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar"
+        },
+        loop: false,
+        effect: "slide",
+        spaceBetween: 30,
+        on: {
+            init: function () {
+                $(".swiper-pagination-custom .swiper-pagination-switch").removeClass("active");
+                $(".swiper-pagination-custom .swiper-pagination-switch").eq(0).addClass("active");
+            },
+            slideChangeTransitionStart: function () {
+                $(".swiper-pagination-custom .swiper-pagination-switch").removeClass("active");
+                $(".swiper-pagination-custom .swiper-pagination-switch").eq(mySwiper.realIndex).addClass("active");
+            }
+        }
+    });
+    $(".swiper-pagination-custom .swiper-pagination-switch").click(function () {
+        mySwiper.slideTo($(this).index());
+        $(".swiper-pagination-custom .swiper-pagination-switch").removeClass("active");
+        $(this).addClass("active");
+    });
+});

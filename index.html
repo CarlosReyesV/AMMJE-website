@@ -8,45 +8,6 @@
 <!--<![endif]-->
 
 <head>
-    <!-- Scroll on Be-part Form-->
-    <style>
-        ::-webkit-scrollbar {
-            width: 20px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background-color: transparent;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background-color: #d6dee1;
-            border-radius: 20px;
-            border: 6px solid transparent;
-            background-clip: content-box;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background-color: #a8bbbf;
-        }
-
-        .timeLineSlides {display: none;}
-
-        .activeTime {
-            background-color: #717171;
-        }
-
-        /* Fading animation */
-        .fade-time {
-            animation-name: faded;
-            animation-duration: 1.5s;
-        }
-
-        @keyframes faded {
-            from {opacity: .4} 
-            to {opacity: 1}
-        }
-    </style>
-
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
     <title>AMMJE - Index</title>
@@ -72,8 +33,10 @@
     <link rel='stylesheet' href='content/clinic/css/clinic.css'>
     <link rel='stylesheet' href='content/clinic/css/custom.css'>
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
     <!-- SCSS -->
-    <!-- <link rel="stylesheet" type="text/css" href="css/timeline-2.scss"> -->
+    <link rel="stylesheet" type="text/css" href="css/timeline-2.css">
 </head>
 
 <body class="home page layout-full-width header-classic minimalist-header header-menu-right sticky-header sticky-white hide-title-area subheader-title-left button-stroke no-content-padding">
@@ -90,7 +53,7 @@
                             <div class="top_bar_left clearfix">
                                 <!-- Logo-->
                                 <div class="logo">
-                                    <h1><a id="logo" href="index.html" title="AMMJE"><img src="content/clinic/images/logoammje.png" /></a></h1>
+                                    <h1><a id="logo" href="index.html" title="AMMJE"><img src="content/clinic/images/logoammje.png" style="filter: brightness(150%);"/></a></h1>
                                 </div>
                                 <!-- Main menu-->
                                 <div class="menu_wrapper">
@@ -667,7 +630,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Allies -->
+                        <!-- First Allies Carousel-->
                         <div class="section dark" style="padding-top: 140px; padding-bottom: 80px; background-color: #263a78; background-image:url(content/clinic/images/home_clinic_staff_bg.jpg); background-repeat:no-repeat; background-position:center; background-attachment:fixed; background-size:cover; -webkit-background-size:cover; height: 400px;">
                             <div class="section_wrapper clearfix">
                                 <div class="items_group clearfix">
@@ -781,7 +744,6 @@
                                                         </div>
                                                     </div>
                                                 </div>
-
                                                 <!-- Repeat -->
                                                 <div class="allies-slide">
                                                     <div class="image_frame no_link scale-with-grid no_border">
@@ -887,183 +849,11 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- <section class="cd-h-timeline js-cd-h-timeline margin-bottom-md">
-                                            <div class="cd-h-timeline__container container">
-                                                <div class="cd-h-timeline__dates">
-                                                    <div class="cd-h-timeline__line">
-                                                        <ol class="">
-                                                            <li class="dotTime" style="font-size: 28px;"><a href="#0" data-date="01/01/2014" class="cd-h-timeline__date cd-h-timeline__date--selected">AFIRME</a></li>
-                                                            <li class="dotTime" style="font-size: 28px;"><a href="#0" data-date="15/01/2014" class="cd-h-timeline__date">KONFIO</a></li>
-                                                            <li class="dotTime" style="font-size: 28px;"><a href="#0" data-date="30/01/2014" class="cd-h-timeline__date">PAI</a></li>
-                                                            <li class="dotTime" style="font-size: 28px;"><a href="#0" data-date="15/02/2014" class="cd-h-timeline__date">POR MÉXICO</a></li>
-                                                            <li style="font-size: 28px;"><a href="#0" data-date="28/02/2014" class="cd-h-timeline__date">HEROIKKA</a></li>
-                                                            <li style="font-size: 28px;"><a href="#0" data-date="15/03/2014" class="cd-h-timeline__date">PRODECON</a></li>
-                                                            <li style="font-size: 28px;"><a href="#0" data-date="30/03/2014" class="cd-h-timeline__date">IPN</a></li>
-                                                            <li style="font-size: 28px;"><a href="#0" data-date="15/04/2014" class="cd-h-timeline__date">LADY MULTIMASK</a></li>
-                                                            <li style="font-size: 28px;"><a href="#0" data-date="30/04/2014" class="cd-h-timeline__date">ASOM</a></li>
-                                                            <li style="font-size: 28px;"><a href="#0" data-date="15/05/2014" class="cd-h-timeline__date">TM</a></li>
-                                                            <li style="font-size: 28px;"><a href="#0" data-date="05/06/2014" class="cd-h-timeline__date">UA</a></li>
-                                                            <li style="font-size: 28px;"><a href="#0" data-date="15/06/2014" class="cd-h-timeline__date">DALIA EMPOWER</a></li>
-                                                            <li style="font-size: 28px;"><a href="#0" data-date="30/06/2014" class="cd-h-timeline__date">FUMEC</a></li>
-                                                            <li style="font-size: 28px;"><a href="#0" data-date="15/07/2014" class="cd-h-timeline__date">MCC</a></li>
-                                                            <li style="font-size: 28px;"><a href="#0" data-date="30/07/2014" class="cd-h-timeline__date">EBM</a></li>
-                                                            <li style="font-size: 28px;"><a href="#0" data-date="15/08/2014" class="cd-h-timeline__date">MC</a></li>
-                                                            <li style="font-size: 28px;"><a href="#0" data-date="30/08/2014" class="cd-h-timeline__date">FCARM</a></li>
-                                                        </ol>
-                                                        <span class="cd-h-timeline__filling-line" aria-hidden="true"></span>
-                                                    </div>
-                                                </div>
-                                                <ul>
-                                                    <li><a href="#0" class="text-replace cd-h-timeline__navigation cd-h-timeline__navigation--prev cd-h-timeline__navigation--inactive">Prev</a></li>
-                                                    <li><a href="#0" class="text-replace cd-h-timeline__navigation cd-h-timeline__navigation--next">Next</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="cd-h-timeline__events" style="width: 90%;">
-                                                <ol>
-                                                    <li class="cd-h-timeline__event cd-h-timeline__event--selected" style="display: flex; justify-content: center;">
-                                                        <div class="cd-h-timeline__event-content">
-                                                            <div class="image_frame no_link scale-with-grid no_border">
-                                                                <div class="image_wrapper"><img class="scale-with-grid timeLineSlides fade-time" src="content/clinic/images/logos/Afirme_logo-1.png"/>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="cd-h-timeline__event" style="display: flex; justify-content: center;">
-                                                        <div class="cd-h-timeline__event-content">
-                                                            <div class="image_frame no_link scale-with-grid no_border">
-                                                                <div class="image_wrapper"><img class="scale-with-grid timeLineSlides fade-time" src="content/clinic/images/logos/Logo_de_Konfío-1.png" />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="cd-h-timeline__event" style="display: flex; justify-content: center;">
-                                                        <div class="cd-h-timeline__event-content">
-                                                            <div class="image_frame no_link scale-with-grid no_border">
-                                                                <div class="image_wrapper" style="display: flex; justify-content: center;"><img class="scale-with-grid timeLineSlides fade-time" src="content/clinic/images/logos/logo_plai-1.png" />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="cd-h-timeline__event" style="display: flex; justify-content: center;">
-                                                        <div class="cd-h-timeline__event-content">
-                                                            <div class="image_frame no_link scale-with-grid no_border">
-                                                                <div class="image_wrapper"><img class="scale-with-grid timeLineSlides fade-time" src="content/clinic/images/logos/fpm-1.png" />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="cd-h-timeline__event" style="display: flex; justify-content: center;">
-                                                        <div class="cd-h-timeline__event-content">
-                                                            <div class="image_frame no_link scale-with-grid no_border">
-                                                                <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/icono_heroikka.png" />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="cd-h-timeline__event" style="display: flex; justify-content: center;">
-                                                        <div class="cd-h-timeline__event-content">
-                                                            <div class="image_frame no_link scale-with-grid no_border">
-                                                                <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/Logo_PRODECON-1.png"/>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="cd-h-timeline__event" style="display: flex; justify-content: center;">
-                                                        <div class="cd-h-timeline__event-content">
-                                                            <div class="image_frame no_link scale-with-grid no_border">
-                                                                <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/Logo_IPN-1.png" />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="cd-h-timeline__event" style="display: flex; justify-content: center;">
-                                                        <div class="cd-h-timeline__event-content">
-                                                            <div class="image_frame no_link scale-with-grid no_border">
-                                                                <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/lmt-1.png" />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="cd-h-timeline__event" style="display: flex; justify-content: center;">
-                                                        <div class="cd-h-timeline__event-content">
-                                                            <div class="image_frame no_link scale-with-grid no_border">
-                                                                <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/asom-1.png" />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="cd-h-timeline__event" style="display: flex; justify-content: center;">
-                                                        <div class="cd-h-timeline__event-content">
-                                                            <div class="image_frame no_link scale-with-grid no_border">
-                                                                <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/tecnologico-de-monterrey-1.png" />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="cd-h-timeline__event" style="display: flex; justify-content: center;">
-                                                        <div class="cd-h-timeline__event-content">
-                                                            <div class="image_frame no_link scale-with-grid no_border">
-                                                                <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/Logo_Universidad_Anáhuac-1.png" />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="cd-h-timeline__event" style="display: flex; justify-content: center;">
-                                                        <div class="cd-h-timeline__event-content">
-                                                            <div class="image_frame no_link scale-with-grid no_border">
-                                                                <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/LogosDalia-1.png" />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="cd-h-timeline__event" style="display: flex; justify-content: center;">
-                                                        <div class="cd-h-timeline__event-content">
-                                                            <div class="image_frame no_link scale-with-grid no_border">
-                                                                <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/LogoFumecCompleto.png" />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="cd-h-timeline__event" style="display: flex; justify-content: center;">
-                                                        <div class="cd-h-timeline__event-content">
-                                                            <div class="image_frame no_link scale-with-grid no_border">
-                                                                <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/ccc-1.png" />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="cd-h-timeline__event" style="display: flex; justify-content: center;">
-                                                        <div class="cd-h-timeline__event-content">
-                                                            <div class="image_frame no_link scale-with-grid no_border">
-                                                                <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/escuela-bolsa-mexicana-1.png" />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="cd-h-timeline__event t" style="display: flex; justify-content: center;">
-                                                        <div class="cd-h-timeline__event-content">
-                                                            <div class="image_frame no_link scale-with-grid no_border">
-                                                                <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/logo_mercadolibre-1.png" />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="cd-h-timeline__event" style="display: flex; justify-content: center;">
-                                                        <div class="cd-h-timeline__event-content">
-                                                            <div class="image_frame no_link scale-with-grid no_border">
-                                                                <div class="image_wrapper"><img class="scale-with-grid" src="content/clinic/images/logos/LOGO-FCARM-1.png" />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ol>
-                                            </div>
-                                        </section> -->
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- First Test Allies -->
+                        <!-- Second Allies Carousel -->
                         <div class="section dark" style="padding-top: 128px; padding-bottom: 48px; background-color: #263a78; background-image:url(content/clinic/images/home_clinic_staff_bg.jpg); background-repeat:no-repeat; background-position:center; background-attachment:fixed; background-size:cover; -webkit-background-size:cover; height: 550px;">
                             <div class="section_wrapper clearfix">
                                 <div class="items_group clearfix">
@@ -1152,44 +942,136 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Second Test Allies -->
-                        <!-- <div class="section dark" style="padding-top: 128px; padding-bottom: 48px; background-color: #263a78; background-image:url(content/clinic/images/home_clinic_staff_bg.jpg); background-repeat:no-repeat; background-position:center; background-attachment:fixed; background-size:cover; -webkit-background-size:cover; height: 550px;">
+                        <!-- Allies Timeline -->
+                        <div class="section dark" style="padding-top: 128px; padding-bottom: 48px; background-color: #263a78; background-image:url(content/clinic/images/home_clinic_staff_bg.jpg); background-repeat:no-repeat; background-position:center; background-attachment:fixed; background-size:cover; -webkit-background-size:cover; height: 550px;">
                             <div class="section_wrapper clearfix">
-                                <div class="items_group clearfix"> -->
+                                <div class="items_group clearfix">
                                     <!-- One full width row-->
-                                    <!-- <div class="column one column_column">
+                                    <div class="column one column_column">
                                         <div class="column_attr align_center">
                                             <h2 style="color: black; padding-bottom: 80px;">ALIADOS ESTRATÉGICOS</h2>
-                                        </div> -->
+                                        </div>
                                         <!-- Timeline -->
-                                        
-                                        <!-- <div class="containerTimeTwo">
+                                        <div class="container">
                                             <div class="swiper-container-wrapper swiper-container-wrapper--timeline">
-                                              
-                                              <ul class="swiper-pagination-custom">
-                                                <li class='swiper-pagination-switch first active'><span class='switch-title'>1911</span></li>
-                                                <li class='swiper-pagination-switch'><span class='switch-title'>1970</span></li>
-                                                <li class='swiper-pagination-switch'><span class='switch-title'>2021</span></li>
-                                                <li class='swiper-pagination-switch last'><span class='switch-title'>3000</span></li>
-                                              </ul>
-                                              
-                                              <div class="swiper-pagination swiper-pagination-progressbar swiper-pagination-horizontal"></div>
-                                              
-                                              <div class="swiper swiper-container swiper-container--timeline">
-                                                <div class="swiper-wrapper">
-                                                  
-                                                  <div class="swiper-slide"><span>Swiper Timeline Progressbar</span></div>
-                                                  <div class="swiper-slide"><span>Title 2</span></div>
-                                                  <div class="swiper-slide"><span>Title 3</span></div>
-                                                  <div class="swiper-slide"><span>Title 4</span></div>
+                                                <ul class="swiper-pagination-custom">
+                                                    <li class='swiper-pagination-switch first active'><span class='switch-title'><p>AFIRME</p></span></li>
+                                                    <li class='swiper-pagination-switch'><span class='switch-title'><p>KONFIO</p></span></li>
+                                                    <li class='swiper-pagination-switch'><span class='switch-title'><p>PAI</p></span></li>
+                                                    <li class='swiper-pagination-switch'><span class='switch-title'><p>PMF</p></span></li>
+                                                    <li class='swiper-pagination-switch'><span class='switch-title'><p>HEROIKKA</p></span></li>
+                                                    <li class='swiper-pagination-switch'><span class='switch-title'><p>PRODECON</p></span></li>
+                                                    <li class='swiper-pagination-switch'><span class='switch-title'><p>IPN</p></span></li>
+                                                    <li class='swiper-pagination-switch'><span class='switch-title'><p>LM</p></span></li>
+                                                    <li class='swiper-pagination-switch'><span class='switch-title'><p>ASOM</p></span></li>
+                                                    <li class='swiper-pagination-switch'><span class='switch-title'><p>TM</p></span></li>
+                                                    <li class='swiper-pagination-switch'><span class='switch-title'><p>UA</p></span></li>
+                                                    <li class='swiper-pagination-switch'><span class='switch-title'><p>DE</p></span></li>
+                                                    <li class='swiper-pagination-switch'><span class='switch-title'><p>FUMEC</p></span></li>
+                                                    <li class='swiper-pagination-switch'><span class='switch-title'><p>MCC</p></span></li>
+                                                    <li class='swiper-pagination-switch'><span class='switch-title'><p>EBM</p></span></li>
+                                                    <li class='swiper-pagination-switch'><span class='switch-title'><p>MC</p></span></li>
+                                                    <li class='swiper-pagination-switch last'><span class='switch-title'><p>FCARM</p></span></li>
+                                                </ul>
+                                                <!-- Progressbar -->
+                                                <div class="swiper-pagination swiper-pagination-progressbar swiper-pagination-horizontal"></div>
+                                                <!-- Swiper -->
+                                                <div class="swiper swiper-container swiper-container--timeline">
+                                                    <div class="swiper-wrapper">
+                                                        <!-- Slides -->
+                                                        <div class="swiper-slide">
+                                                            <div class="image_wrapper">
+                                                                <img src='content/clinic/images/logos/Afirme_logo-1.png'/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="image_wrapper">
+                                                                <img src='content/clinic/images/logos/Logo_de_Konfío-1.png'/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="image_wrapper">
+                                                                <img src='content/clinic/images/logos/logo_plai-1.png'/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="image_wrapper">
+                                                                <img src='content/clinic/images/logos/fpm-1.png'/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="image_wrapper">
+                                                                <img src='content/clinic/images/logos/icono_heroikka.png'/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="image_wrapper">
+                                                                <img src='content/clinic/images/logos/Logo_PRODECON-1.png'/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="image_wrapper">
+                                                                <img src='content/clinic/images/logos/Logo_IPN-1.png'/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="image_wrapper">
+                                                                <img src='content/clinic/images/logos/lmt-1.png'/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="image_wrapper">
+                                                                <img src='content/clinic/images/logos/asom-1.png'/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="image_wrapper">
+                                                                <img src='content/clinic/images/logos/tecnologico-de-monterrey-1.png'/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="image_wrapper">
+                                                                <img src='content/clinic/images/logos/Logo_Universidad_Anáhuac-1.png'/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="image_wrapper">
+                                                                <img src='content/clinic/images/logos/LogosDalia-1.png'/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="image_wrapper">
+                                                                <img src='content/clinic/images/logos/LogoFumecCompleto.png'/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="image_wrapper">
+                                                                <img src='content/clinic/images/logos/ccc-1.png'/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="image_wrapper">
+                                                                <img src='content/clinic/images/logos/escuela-bolsa-mexicana-1.png'/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="image_wrapper">
+                                                                <img src='content/clinic/images/logos/logo_mercadolibre-1.png'/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="image_wrapper">
+                                                                <img src='content/clinic/images/logos/LOGO-FCARM-1.png'/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                              </div>
                                             </div>
-                                          </div> -->
-                        <!--             </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div> -->
+                        </div> 
                         <!-- Contact -->
                         <div class="section" style="padding-top: 120px; padding-bottom: 4px; background-color:#fff">
                             <div class="section_wrapper clearfix">
@@ -1319,12 +1201,12 @@
     <script src="js/animations/animations.js"></script>
     <script src="js/scripts.js"></script>
 
-    <script src="js/util.js"></script>
-    <script src="js/swipe-content.js"></script>
-    <script src="js/main.js"></script>
-
     <script src="js/bepart.js"></script>
     <script src="js/allies-board.js"></script>
+
+    <!-- Timeline -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
 
     <!-- Top navbar scroll -->
     <script>
@@ -1338,47 +1220,6 @@
             }
         });
     </script>
-
-    <!-- Second Timeline -->
-    <!-- <script>
-        $(document).ready(function () {
-    var mySwiper = new Swiper(".swiper", {
-        autoHeight: true,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false
-        },
-        speed: 500,
-        direction: "horizontal",
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev"
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            type: "progressbar"
-        },
-        loop: false,
-        effect: "slide",
-        spaceBetween: 30,
-        on: {
-        init: function () {
-            $(".swiper-pagination-custom .swiper-pagination-switch").removeClass("active");
-            $(".swiper-pagination-custom .swiper-pagination-switch").eq(0).addClass("active");
-        },
-        slideChangeTransitionStart: function () {
-            $(".swiper-pagination-custom .swiper-pagination-switch").removeClass("active");
-            $(".swiper-pagination-custom .swiper-pagination-switch").eq(mySwiper.realIndex).addClass("active");
-            }
-        }
-    });
-    $(".swiper-pagination-custom .swiper-pagination-switch").click(function () {
-        mySwiper.slideTo($(this).index());
-        $(".swiper-pagination-custom .swiper-pagination-switch").removeClass("active");
-        $(this).addClass("active");
-    });
-});
-    </script> -->
 </body>
 
 </html>
