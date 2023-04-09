@@ -110,12 +110,13 @@ $secondary-color: #888;
       }
     }
   }
-  @media screen and (max-width: 960px){
-    .switch-title p{
-      display: none;
-    }
-    .swiper-pagination-progressbar{
-      top: -30px;
-    }
+}
+
+@media screen and (max-width: 960px){
+  .switch-title p{
+    display: none;
+  }
+  .swiper-pagination-progressbar{
+    top: -30px;
   }
 }
