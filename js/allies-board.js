@@ -1,5 +1,3 @@
-/* Board */
-
 /* Second Allies Timeline*/
 var slideIndex = 1;
 var myTimer;
