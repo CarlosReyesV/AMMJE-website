@@ -50,7 +50,7 @@
     align-items: center;
     animation: timeMove 40s linear infinite;
     -webkit-animation: timeMove 40s linear infinite;
-    width: calc(200px * 34); 
+    width: calc(200px * 28); 
 }
 
 .allies-slider .allies-slide{
@@ -68,8 +68,8 @@
         transform: translateX(0);
     }
     100% {
-        -webkit-transform: translateX(calc(-200px * 17));
-        transform: translateX(calc(-200px * 17));
+        -webkit-transform: translateX(calc(-200px * 14));
+        transform: translateX(calc(-200px * 14));
     }
 }
 
